@@ -105,6 +105,9 @@ This project uses Nix flakes to manage development dependencies. Run `nix develo
 
 ## Building
 
+For reproducible Nix builds and use from a NixOS configuration, see
+[Nix packaging](nix/README.md).
+
 This is built with .NET 10.0. Build with `dotnet publish .` for the debug release in the `SSO-Auth` directory. Copy over the `IdentityModel.OidcClient.dll`, the `IdentityModel.dll` and the `SSO-Auth.dll` files in the `/bin/Debug/net10.0/publish` directory to a new folder in your Jellyfin configuration: `config/plugins/sso`.
 
 ### VSCode Workflow
